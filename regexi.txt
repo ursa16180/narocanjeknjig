@@ -1,0 +1,8 @@
+AMAZON (isbn10 in cena)
+<span class="zeitgeist(\d{10})">\s*<span.*?<strong class="price">$((\d|.)*)?<
+
+Depository regex
+<meta itemprop="author" content="(.*?)".*?<h1 itemprop="name">(.*?)<.*?<div class="item-info-wrap">\s*<p class="price">\s*(\d*,\d{2}).*?<label>Format</label>\s*<span>\s*(\w*).*?"numberOfPages">(\d+).*?"datePublished">(\d{2} \w{3} \d{4}).*?Publication City/Country</label>\s*<span>\s*((\w|\s|\.)*).*?Language</label>\s*<span>\s*(\w*).*?ISBN10</label>\s*<span>(\d{10}).*?ISBN13</label>\s*<span itemprop="isbn">(\d{13})
+
+Amazon(Parse) (isbn10 in cena)
+gp/product-reviews/(\d{10}).{150,200}?\$\d*\.\d{2} \$(\d*\.\d{2})
